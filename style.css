@@ -23,7 +23,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  transform: translate(-50%, -50%);
 }
 
 form {
