@@ -8,6 +8,7 @@
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   background-image: linear-gradient(
     0deg,
     rgba(18, 255, 236, 1) 16%,
@@ -77,4 +78,40 @@ input[type="search"]:focus {
   box-shadow: 0 0 3px 0 #1183d6;
   border-color: #1183d6;
   outline: none;
+}
+
+#main{
+  display: flex;
+  border: #1183d6;
+  border: 2px solid white;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.avatar img {
+  width: 200px;
+  border: 2px solid white;
+  border-radius: 50%;
+
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user_info .info, #repos {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  float: right;
+}
+
+#repos a {
+  text-decoration: none;
+  padding: 3px 12px;
+  background-color: white;
+  color: rgb(47 53 67);
+  border-radius: 5px;
 }
